@@ -1,0 +1,68 @@
+body {
+  background-image: url("img/background.jpg");
+  display: flex;
+  height: 95vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+.login-box {
+  width: 400px;
+  padding: 40px;
+  background: #ffffff17;
+  backdrop-filter: blur(15px) saturate(200%);
+  border-radius: 10px;
+}
+.login-box h2 {
+  color: black;
+  text-align: center;
+}
+.login-box .user-box {
+  position: relative;
+}
+.user-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  outline: none;
+}
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  transition: 0.5s;
+}
+input:focus + label,
+input:valid + label {
+  top: -20px;
+  left: 0;
+  color: black;
+  font-size: 12px;
+}
+a {
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  transition: 0.5s;
+  background: coral;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 20px 10px black;
+  cursor: pointer;
+}
+a:hover {
+  box-shadow: 0 0 0 0 black;
+  color: black;
+}
